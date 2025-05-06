@@ -1,0 +1,99 @@
+@import url(./variable.css);
+@import url(./global.css);
+
+/* General */
+html {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+/* Navbar Begin */
+.navbar-brand img {
+  width: 100px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.collapse .navbar-nav .nav-link {
+  font: normal 500 15px/1.7px var(--roboto);
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link.active {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.navbar-nav .nav-link:hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Navbar End....................................... */
+
+/* Banner Begin */
+.site-banner{
+  height: 100vh;
+}
+
+.site-banner .container .row{
+  padding-top: 10%;
+}
+
+
+.site-main .site-banner{
+  background: url(../images/smilelink-bg-02.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  
+}
+ 
+.site-main .site-banner .site-title h3{
+  padding-top: 10%;
+  font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+  content: "";
+  height: 2px;
+  width: 15vw;
+  background: black;
+  display: inline-block;
+  margin-left: 2%;
+  transform: translateY(-8px);
+}
+
+.site-main .site-banner .site-title h1{
+  font-size: 3.5rem;
+}
+
+.site-main .site-banner .site-title h4{
+  font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-img > img{
+  /* padding: 4rem 0; */
+  width: 35rem;
+}
+
+/* Banner End....................................... */
+
+
+/* About Start */
+.site-main .about-area{
+  padding: 5rem 5rem;
+}
+
+/* About Start ..................................... */
