@@ -42,11 +42,11 @@ html {
 
 /* Banner Begin */
 .site-banner{
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .site-banner .container .row{
-  padding-top: 10%;
+  /* padding-top: 10%; */
 }
 
 
@@ -55,7 +55,7 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   
 }
@@ -93,7 +93,40 @@ html {
 
 /* About Start */
 .site-main .about-area{
-  padding: 5rem 5rem;
+  padding: 5rem 0;
 }
 
-/* About Start ..................................... */
+.site-main .about-area .about-title h2 > span{
+  display: block;
+  font: normal bold 42px/40px var(--roboto);
+  letter-spacing: 12px;
+}
+
+.site-main .about-area .about-title .paragraph > p{
+  padding: .2rem 0;
+}
+
+.site-main .about-area{
+  background: url(../images/smilelink-bg-03\ \(1920\ x\ 1080\ px\).png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+  width: 100%;
+  
+}
+
+.site-main .about-area .about-img > img{
+  padding: 4rem 0;
+  width: 35rem;
+}
+/* About End ..................................... */
+
+
+
+/* Brand Start ..................................... */
+.site-main .brand-area .row .single-brand > img {
+  width: 75px;
+}
+
+/* Brand End ..................................... */
