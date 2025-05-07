@@ -59,3 +59,8 @@ p.para{
 .font-roboto{
   font-family: var(--roboto);
 }
+
+/* button:focus, button:active, button:hover, .btn:active, .btn.active{
+  outline: 0px !important;
+  box-shadow: none;
+} */
