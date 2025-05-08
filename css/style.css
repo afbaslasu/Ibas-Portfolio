@@ -278,8 +278,8 @@ html {
 /* .project-area .our-project .img > img {
   width: 280px;
   height: 174px;
-} */
-/* .site-main .project-area {
+}
+.site-main .project-area {
   padding: 4rem 0;
 }
 .site-main .project-area .button-group button {
@@ -295,33 +295,72 @@ html {
   font: noraml 700 25px/12px var(--roboto);
 } */
 
- .button-group {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .button-group button {
-      margin: 0 5px;
-      padding: 10px 20px;
-      cursor: pointer;
-      border: none;
-      background-color: #eee;
-      font-weight: bold;
-    }
-    .button-group button.active {
-      background-color: #007bff;
-      color: white;
-    }
-    .our-project {
-      border: 1px solid #ddd;
-      padding: 10px;
-      margin-bottom: 20px;
-      background: #f9f9f9;
-    }
-    .our-project .img img {
-      width: 100%;
-      height: auto;
-    }
-    .site-main .project-area .grid .our-project .img a:hover img{
-      filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
-    }
+.button-group {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.button-group button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #eee;
+  font-weight: bold;
+}
+.button-group button.active {
+  background-color: #007bff;
+  color: white;
+}
+.our-project {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+}
+.our-project .img img {
+  width: 100%;
+  height: auto;
+}
+.site-main .project-area .grid .our-project .img a:hover img {
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
 /* Project End ..................................... */
+
+/* Subcribe Start */
+.site-main .subscribe-us-area .subscribe {
+  background: url(../images/subscribe-bg-8.jpg) no-repeat;
+  padding: 10rem 0;
+  margin: 3rem auto;
+}
+.site-main .subscribe-us-area .subscribe .subscribe-title h4 {
+  font: normal 700 30px/30px var(--roboto);
+  color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title p {
+  color: whitesmoke;
+  padding: 1rem 4rem;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input {
+  width: 400px;
+  padding: 0.9rem 1rem;
+  border: 1px solid whitesmoke;
+  background: transparent;
+  color: white;
+  font: normal 500 17px/20px var(--roboto);
+}
+.site-main
+  .subscribe-us-area
+  .subscribe
+  form
+  .input-textbox
+  input::placeholder {
+  color: white;
+}
+.site-main .subscribe-us-area .subscribe form .btn-submit button {
+  background: whitesmoke;
+  color: black;
+  padding: 0.7rem 2rem;
+}
+/* Subcribe End ..................................... */
