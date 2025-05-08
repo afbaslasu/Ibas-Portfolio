@@ -222,7 +222,7 @@ html {
 }
 
 .site-main .services-area {
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
 }
 .site-main .services-area .services-title {
   padding: 0.14rem;
@@ -320,5 +320,8 @@ html {
     .our-project .img img {
       width: 100%;
       height: auto;
+    }
+    .site-main .project-area .grid .our-project .img a:hover img{
+      filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
     }
 /* Project End ..................................... */
