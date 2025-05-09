@@ -359,42 +359,57 @@ html {
 /* Testimonial End ..................................... */
 
 /* Subcribe Start */
-.site-main .subscribe-us-area .subscribe {
-  background: url(../images/subscribe-bg-8.jpg) no-repeat;
+.subscribe-us-area .subscribe {
+  background: url('../images/subscribe-bg-8.jpg') no-repeat center center;
+  background-size: cover;
   padding: 10rem 0;
+  position: relative;
   margin: 3rem auto;
 }
-.site-main .subscribe-us-area .subscribe .subscribe-title h4 {
+
+.subscribe-us-area .subscribe .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.subscribe-us-area .subscribe .container {
+  position: relative;
+  z-index: 2;
+}
+
+.subscribe-us-area .subscribe .subscribe-title h4 {
   font: normal 700 30px/30px var(--roboto);
   color: whitesmoke;
 }
 
-.site-main .subscribe-us-area .subscribe .subscribe-title p {
+.subscribe-us-area .subscribe .subscribe-title p {
   color: whitesmoke;
   padding: 1rem 4rem;
 }
 
-.site-main .subscribe-us-area .subscribe form .input-textbox input {
-  width: 400px;
+.subscribe-us-area .subscribe form input {
   padding: 0.9rem 1rem;
   border: 1px solid whitesmoke;
   background: transparent;
   color: white;
   font: normal 500 17px/20px var(--roboto);
 }
-.site-main
-  .subscribe-us-area
-  .subscribe
-  form
-  .input-textbox
-  input::placeholder {
+
+.subscribe-us-area .subscribe form input::placeholder {
   color: white;
 }
-.site-main .subscribe-us-area .subscribe form .btn-submit button {
+
+.subscribe-us-area .subscribe form button {
   background: whitesmoke;
   color: black;
   padding: 0.7rem 2rem;
 }
+
 /* Subcribe End ..................................... */
 
 
