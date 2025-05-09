@@ -292,6 +292,9 @@ html {
   font: noraml 700 25px/12px var(--roboto);
 } */
 
+.site-main .project-area .container{
+  margin-bottom: 4rem;
+}
 .button-group {
   text-align: center;
   margin-bottom: 30px;
@@ -322,6 +325,38 @@ html {
   filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
 /* Project End ..................................... */
+
+/* Testimonial Start */
+#testimonials {
+  background-color: #f8f9fa;
+}
+
+#testimonials .carousel-item {
+  padding: 2rem 0;
+}
+
+#testimonials img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+#testimonials h5 {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#testimonials p {
+  font-style: italic;
+}
+
+#testimonials .carousel-control-prev-icon,
+#testimonials .carousel-control-next-icon {
+  background-size: 1.5rem 1.5rem;
+}
+
+
+/* Testimonial End ..................................... */
 
 /* Subcribe Start */
 .site-main .subscribe-us-area .subscribe {
@@ -361,3 +396,17 @@ html {
   padding: 0.7rem 2rem;
 }
 /* Subcribe End ..................................... */
+
+
+/* Back to Top */
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 999;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 18px;
+}

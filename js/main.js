@@ -42,3 +42,20 @@ $(document).ready(function () {
     },
   });
 });
+
+$(document).ready(function () {
+  // Show or hide the button based on scroll position
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $("#btn-back-to-top").fadeIn();
+    } else {
+      $("#btn-back-to-top").fadeOut();
+    }
+  });
+
+  // Scroll to top when the button is clicked
+  $("#btn-back-to-top").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 800);
+    return false;
+  });
+});
