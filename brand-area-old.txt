@@ -1,0 +1,181 @@
+brand-area old
+ 
+"<section class="brand-area">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-6 col-lg-12 col-md-12">
+              <div class="first-row row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="single-brand">
+                    <img src="./images/builder-client-49-1.png" alt="brand 1" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="single-brand">
+                    <img src="./images/building-client-386.jpg" alt="brand 2" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="single-brand">
+                    <img src="./images/building-client-500.jpg" alt="brand 3" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="single-brand">
+                    <img
+                      src="./images/building-client-e435.png"
+                      alt="brand 4"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="single-brand">
+                    <img src="./images/building-client-df5.png" alt="brand 5" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="single-brand">
+                    <img src="./images/building-client-a39.png" alt="brand 6" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="single-brand">
+                    <img src="./images/building-client-df5.png" alt="brand 7" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="single-brand">
+                    <img
+                      src="./images/building-client-e435.png"
+                      alt="brand 8"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="single-brand">
+                    <img src="./images/building-client-f77.png" alt="brand 9" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-12 col-md-12">
+              <div class="experience-area">
+                <div class="d-flex flex-row years-area">
+                  <h2 class="p-3 years">6</h2>
+                  <h2>
+                    <span>Years</span>
+                    <span>Experience</span>
+                    <span>Working</span>
+                  </h2>
+                </div>
+
+                <div class="bg-panel">
+                  <div class="d-flex flex-row flex-wrap call-area">
+                    <span><i class="fa-solid fa-phone fa-3x px-3"></i></span>
+                    <div class="call-now">
+                      <a href="#" class="text-uppercase h4 font-roboto"
+                        >Call Now</a
+                      >
+                      <span class="font-roboto py-2">+2348160175628</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+css
+
+/* Brand Start */
+.site-main .brand-area {
+  margin: 7rem 0;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand > img {
+  width: 70%;
+  height: 70%;
+}
+
+.site-main .brand-area .first-row .col-lg-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* center vertically */
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand {
+  border: 1px solid var(--border-color);
+  padding: 0.8rem;
+  margin: 0.9rem 0;
+  width: 180px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover {
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  transform: scale(1.2);
+  box-sizing: var(--box-shadow);
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img {
+  filter: brightness(0.9);
+}
+
+.site-main .brand-area .experience-area {
+  position: relative; /* anchor for absolute children */
+  padding-left: 2rem;
+  height: 100%;
+}
+
+.site-main .brand-area .experience-area .years-area {
+  background: url(../images/parallax-bg-about-us.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 2rem 0;
+  width: 30rem;
+  height: 10rem;
+  padding-left: 4rem;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  z-index: 1;
+}
+
+.site-main .brand-area .experience-area .bg-panel {
+  position: relative;
+  background: hsla(0, 0%, 0%, 0.05);
+  width: 100%;
+  height: 400px;
+  /* margin-top: 10rem; */
+  z-index: 0;
+}
+
+.site-main .brand-area .experience-area .call-area {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  align-items: center;
+  font: normal bold 24px/40px var(--roboto);
+  color: var(--primary-sub-color);
+}
+
+.site-main .brand-area .experience-area .call-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.site-main .brand-area .experience-area .years-area .years {
+  font: normal bold 84px/40px var(--roboto);
+  color: var(--primary-sub-color);
+  z-index: 2;
+}
+.site-main .brand-area .experience-area .years-area h2 > span {
+  font: normal 600 22px/30px var(roboto);
+}"
