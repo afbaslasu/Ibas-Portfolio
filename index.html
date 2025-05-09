@@ -24,6 +24,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
     />
+    <!-- Font Awesome for star icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap Testimonial Slider CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-testimonial-slider/1.0.0/bootstrap-testimonial-slider.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Google Fonts -->
     <link
@@ -75,7 +86,7 @@
                   <a class="nav-link" href="#Portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#testimonies">Testimonies</a>
+                  <a class="nav-link" href="#testimonials">Testimonies</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Blog</a>
@@ -713,19 +724,87 @@
 
       <!-- ===================== What Client Say About Me Begin ===================== -->
 
-      <section class="about-area" id="testimonies">
+      <section id="testimonials" class="py-5 bg-light">
         <div class="container">
-          <div class="row text-center">
-            <div class="col-12">
-              <div class="about-title">
-                <h1 class="text-uppercase title-h1">Client Testimonies</h1>
-                <p class="para">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Reprehenderit corrupti ex obcaecati! Quas assumenda nesciunt
-                  voluptas fuga consequuntur repudiandae incidunt.
+          <h2 class="text-center mb-5">What Our Clients Say</h2>
+          <div
+            id="testimonialCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="5000"
+          >
+            <div class="carousel-inner">
+              <!-- Testimonial 1 -->
+              <div class="carousel-item active text-center">
+                <img
+                  src="https://via.placeholder.com/100"
+                  class="rounded-circle mb-3"
+                  alt="Client 1"
+                />
+                <h5>Jane Doe</h5>
+                <p class="text-muted">CEO, ExampleCorp</p>
+                <p class="px-5">
+                  "This company transformed our business. Their solutions are
+                  top-notch and the support is unparalleled."
                 </p>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
               </div>
+
+              <!-- Testimonial 2 -->
+              <div class="carousel-item text-center">
+                <img
+                  src="https://via.placeholder.com/100"
+                  class="rounded-circle mb-3"
+                  alt="Client 2"
+                />
+                <h5>John Smith</h5>
+                <p class="text-muted">Marketing Director, MarketMasters</p>
+                <p class="px-5">
+                  "Their team delivered beyond expectations. The project was
+                  completed ahead of schedule and exceeded our goals."
+                </p>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+
+              <!-- Add four more testimonials similarly -->
             </div>
+            <!-- Carousel controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-dark rounded-circle"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-dark rounded-circle"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </section>
@@ -796,16 +875,22 @@
                 style="width: 60px; background-color: #ffffff; height: 2px"
               />
               <p>
-                <a href="#" class="text-white text-decoration-none">Home</a>
+                <a href="#hero" class="text-white text-decoration-none">Home</a>
               </p>
               <p>
-                <a href="#" class="text-white text-decoration-none">Projects</a>
+                <a href="#Portfolio" class="text-white text-decoration-none"
+                  >Projects</a
+                >
               </p>
               <p>
-                <a href="#" class="text-white text-decoration-none">About</a>
+                <a href="#about" class="text-white text-decoration-none"
+                  >About</a
+                >
               </p>
               <p>
-                <a href="#" class="text-white text-decoration-none">Contact</a>
+                <a href="#contact" class="text-white text-decoration-none"
+                  >Contact</a
+                >
               </p>
             </div>
 
