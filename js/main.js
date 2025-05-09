@@ -15,6 +15,25 @@ $(document).ready(function () {
   });
 });
 
+// Initialize swiper function
+var swiper = new Swiper(".swiper-container", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 4,
+    },
+    992: {
+      slidesPerView: 5,
+    },
+  },
+});
+
 $(document).ready(function () {
   // Initialize Isotope
   var $grid = $(".grid").isotope({

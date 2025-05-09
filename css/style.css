@@ -116,94 +116,57 @@ html {
 /* About End ..................................... */
 
 /* Brand Start */
-.site-main .brand-area {
-  margin: 7rem 0;
+.brand-area {
+  background-color: #f8f9fa;
 }
 
-.site-main .brand-area .first-row .col-lg-4 > .single-brand > img {
-  width: 70%;
-  height: 70%;
-}
-
-.site-main .brand-area .first-row .col-lg-4 {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* center vertically */
-}
-
-.site-main .brand-area .first-row .col-lg-4 > .single-brand {
-  border: 1px solid var(--border-color);
-  padding: 0.8rem;
-  margin: 0.9rem 0;
-  width: 180px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover {
-  cursor: pointer;
-  transition: transform 0.4s ease;
-  transform: scale(1.2);
-  box-sizing: var(--box-shadow);
-}
-
-.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img {
-  filter: brightness(0.9);
-}
-
-.site-main .brand-area .experience-area {
-  position: relative; /* anchor for absolute children */
-  padding-left: 2rem;
-  height: 100%;
-}
-
-.site-main .brand-area .experience-area .years-area {
-  background: url(../images/parallax-bg-about-us.jpg) no-repeat center center;
-  background-size: cover;
-  padding: 2rem 0;
-  width: 30rem;
-  height: 10rem;
-  padding-left: 4rem;
-  position: absolute;
-  top: 70px;
-  left: 0;
-  z-index: 1;
-}
-
-.site-main .brand-area .experience-area .bg-panel {
-  position: relative;
-  background: hsla(0, 0%, 0%, 0.05);
+.swiper-container {
   width: 100%;
-  height: 400px;
-  /* margin-top: 10rem; */
+  padding: 20px 0;
+  position: relative;
+  z-index: 0;
+}
+/* Ensure the Swiper container is positioned relative and has a lower z-index */
+
+/* Ensure the Swiper wrapper is also positioned relative and has a lower z-index */
+.swiper-wrapper {
+  position: relative;
   z-index: 0;
 }
 
-.site-main .brand-area .experience-area .call-area {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  z-index: 2;
+.swiper-slide {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  font: normal bold 24px/40px var(--roboto);
-  color: var(--primary-sub-color);
 }
 
-.site-main .brand-area .experience-area .call-now {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.swiper-slide img {
+  max-width: 150px;
+  transition: transform 0.3s ease;
 }
-.site-main .brand-area .experience-area .years-area .years {
-  font: normal bold 84px/40px var(--roboto);
-  color: var(--primary-sub-color);
-  z-index: 2;
+
+.swiper-slide img:hover {
+  transform: scale(1.1);
 }
-.site-main .brand-area .experience-area .years-area h2 > span {
-  font: normal 600 22px/30px var(roboto);
+
+.experience-panel {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
 }
+
+.experience-panel h2 {
+  color: #0d6efd;
+}
+
+.experience-panel .btn {
+  background-color: #0d6efd;
+  border: none;
+}
+
+
 /* Brand End ..................................... */
 
 /* Services Begin */
